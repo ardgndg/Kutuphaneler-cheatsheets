@@ -1,0 +1,13 @@
+from selenium import webdriver
+import time
+driver = webdriver.Edge()
+url = "https://www.youtube.com/watch?v=QH2-TGUlwu4"
+driver.get(url)
+time.sleep(5)
+driver.maximize_window()
+driver.save_screenshot("screenshot.png")
+print("Screenshot saved")
+print(driver.title)
+time.sleep(5)
+
+
